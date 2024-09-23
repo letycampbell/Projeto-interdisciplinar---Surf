@@ -20,16 +20,17 @@
     <header id="header">
         <div class="container">
             <div class="flex">
-                <nav>
+                <!-- Ícone do menu hambúrguer -->
+                <div class="menu-hamburguer" id="menu-toggle">&#9776;</div>
+    
+                <img id="logo-branca" class="logo-branca" src="./imagens/logo branca.png" alt="logo branca">
+                <img id="logo-azul" class="logo" src="./imagens/logo azul.png" alt="logo azul" style="display: none;">
+                
+                <!-- Navegação principal combinada -->
+                <nav class="main-nav">
                     <ul>
                         <li class="inicio"><a href="index.html">Início</a></li>
                         <li class="resultados"><a href="resultados.html">Resultados</a></li>
-                    </ul>
-                </nav>
-                <img id="logo-branca" class="logo-branca" src="./imagens/logo branca.png" alt="logo branca">
-                <img id="logo-azul" class="logo" src="./imagens/logo azul.png" alt="logo azul" style="display: none;">
-                <nav>
-                    <ul>
                         <li class="olimpiadas"><a href="olimpiadas.html">Olimpíadas</a></li>
                         <li class="contato"><a href="feedback.html">Contato</a></li>
                     </ul>
@@ -37,10 +38,23 @@
             </div><!--flex-->
         </div><!--container-->
     </header>
-
-
     
+    
+    <!--  JAVA MENU -->
 
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Adiciona um listener de evento de clique no ícone do menu hambúrguer
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+        const header = document.getElementById("header"); // Seleciona o header
+        header.classList.toggle("show"); // Alterna a classe 'show' para exibir/ocultar o menu
+    });
+});
+
+
+
+    </script>
+    
     <main>
         <article>
             <h1 class="o-surf">O Surf</h1>

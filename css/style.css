@@ -10,43 +10,47 @@
 }
 
 .logo {
-    height: 85px; /* Altura padrão para a logo azul */
-    width: 180px; /* Largura padrão para a logo azul */
+    height: 85px;
+    /* Altura padrão para a logo azul */
+    width: 180px;
+    /* Largura padrão para a logo azul */
 }
 
 /*BOTÃO MENU*/
 
-.inicio:hover{
-    transition: 150ms linear; 
+.inicio:hover {
+    transition: 150ms linear;
     filter: brightness(130%);
     font-size: 23px;
-    
-}  /*botao inicio */
 
-.resultados:hover{
-    transition: 150ms linear; 
-    filter: brightness(130%);
-    font-size: 23px;
-    
 }
 
-.olimpiadas:hover{
-    transition: 150ms linear; 
+/*botao inicio */
+
+.resultados:hover {
+    transition: 150ms linear;
     filter: brightness(130%);
     font-size: 23px;
-    
+
 }
 
-.contato:hover{
-    transition: 150ms linear; 
+.olimpiadas:hover {
+    transition: 150ms linear;
     filter: brightness(130%);
     font-size: 23px;
-    
+
+}
+
+.contato:hover {
+    transition: 150ms linear;
+    filter: brightness(130%);
+    font-size: 23px;
+
 }
 
 /*FINAL BOTÃO*/
 
-body{
+body {
     font-family: "Montserrat", sans-serif;
     font-size: 17px;
 }
@@ -54,7 +58,7 @@ body{
 html {
     /* height: 500vh; */
     background-color: #FFFDF1;
-} 
+}
 
 .container {
     max-width: 1280px;
@@ -79,7 +83,7 @@ header {
 }
 
 
- /* header.rolagem {
+/* header.rolagem {
     background-color: #fff;
     padding: 20px 4%;
 }
@@ -97,12 +101,12 @@ header ul li {
     margin: 0 40px;
 }
 
-header ul li a{
+header ul li a {
     color: #164059;
     text-decoration: none;
 }
 
-.backgrond{
+.backgrond {
     height: 121vh;
     width: 216vh;
     background-position: 100% 0;
@@ -114,31 +118,32 @@ header ul li a{
     justify-content: center; */
 }
 
-h1.surfe-olimpiadas{
+h1.surfe-olimpiadas {
     font-family: "Libre Baskerville", serif;
     font-size: 50px;
 }
 
-p{
+p {
     text-align: justify;
     padding: 8px 60px;
 }
 
-article{
+article {
     text-align: center;
     padding: 1em 10em 10em 10em;
 }
 
 
-.p-img-inicio{
+.p-img-inicio {
     display: flex;
 }
 
-.olimpiada{
+.olimpiada {
     max-width: 100%;
     height: 20em;
     padding: 1em 0 0 4em;
 }
+
 /* ------------------------------------------------------ */
 /* OLIMPIADAS IMAGENS LINK*/
 
@@ -150,7 +155,7 @@ article{
     padding: 10em 10em 8em 10em;
 }
 
-.final{
+.final {
     width: 40%;
     height: 20%;
     margin: 1em;
@@ -166,12 +171,15 @@ article{
 .imagem {
     width: 100%;
     height: auto;
-    border-radius: 4px; /* Borda arredondada */
-    transition: transform 0.5s ease; /* Transição suave */
+    border-radius: 4px;
+    /* Borda arredondada */
+    transition: transform 0.5s ease;
+    /* Transição suave */
 }
 
 .imagem:hover {
-    transform: scale(1.05); /* Aumenta a imagem em 10% ao passar o mouse */
+    transform: scale(1.05);
+    /* Aumenta a imagem em 10% ao passar o mouse */
     filter: brightness(70%);
 }
 
@@ -189,18 +197,22 @@ article{
     z-index: 5;
     padding: 5em 0 0 0;
 }
+
 .carousel-inner {
     display: flex;
     transition: transform 0.5s ease;
 }
+
 .carousel-item {
     min-width: 100%;
     box-sizing: border-box;
 }
+
 .carousel img {
     width: 100%;
     border-radius: 5px;
 }
+
 .carousel-controls {
     position: absolute;
     top: 50%;
@@ -209,6 +221,7 @@ article{
     justify-content: space-between;
     transform: translateY(-50%);
 }
+
 .carousel-control {
     background-color: rgba(22, 64, 89, 0.267);
     border: none;
@@ -219,12 +232,15 @@ article{
 
 @media (max-width: 768px) {
     .carousel {
-      width: 100%;
+        width: 100%;
     }
+
     .main-container {
-      flex-direction: column-reverse; /* Inverte a ordem dos elementos em telas menores */
+        flex-direction: column-reverse;
+        /* Inverte a ordem dos elementos em telas menores */
     }
-  }
+}
+
 /* ------------------------------------------------------------------ */
 /* RESULTADOS */
 
@@ -241,11 +257,13 @@ article{
     padding: 0 0 5em 0;
 }
 
-.feminino, .masculino {
+.feminino,
+.masculino {
     padding: 0 5em 2em 5em;
 }
 
-.titulo-surfe-feminino, .titulo-surfe-masculino {
+.titulo-surfe-feminino,
+.titulo-surfe-masculino {
     font-family: "Libre Baskerville", serif;
     text-align: justify;
     font-size: 30px;
@@ -254,11 +272,12 @@ article{
     color: #164059;
 }
 
-.p-resultados-feminino, .p-resultados-masculino {
+.p-resultados-feminino,
+.p-resultados-masculino {
     text-align: justify;
 }
 
-.subtitulo{
+.subtitulo {
     text-align: justify;
     padding: 1em 0 0 3em;
     color: #164059;
@@ -266,11 +285,14 @@ article{
 
 .container-medalhas {
     display: flex;
-    justify-content: center; /* Centraliza as imagens */
+    justify-content: center;
+    /* Centraliza as imagens */
     justify-content: space-evenly;
 }
+
 .imagem-medalhas {
-    margin: 10px; /* Espaçamento entre as imagens */
+    margin: 10px;
+    /* Espaçamento entre as imagens */
     height: 33em;
     width: 33em;
     border-radius: 2em;
@@ -280,55 +302,75 @@ article{
 /* FOOTER */
 
 footer {
-    background-color: #164059; /* Cor de fundo do footer */
-    color: #ffffff; /* Cor do texto */
-    padding: 40px 2px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
+    background-color: #164059;
+    /* Cor de fundo do footer */
+    color: #ffffff;
+    /* Cor do texto */
+    padding: 40px 2px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centraliza o texto */
 }
 
 .footer-content {
-    margin-bottom: 20px; /* Espaçamento entre o conteúdo e o copyright */
+    margin-bottom: 20px;
+    /* Espaçamento entre o conteúdo e o copyright */
 }
 
 img.img-footer {
-    width: 20em; /* Largura da imagem */
-    height: auto; /* Mantém a proporção */
+    width: 20em;
+    /* Largura da imagem */
+    height: auto;
+    /* Mantém a proporção */
     display: block;
-    margin: 0 auto; /* Centraliza a imagem */
+    margin: 0 auto;
+    /* Centraliza a imagem */
 }
 
 .footer-content p {
-    max-width: 600px; /* Largura máxima do parágrafo */
-    line-height: 1.6; /* Altura da linha */
+    max-width: 600px;
+    /* Largura máxima do parágrafo */
+    line-height: 1.6;
+    /* Altura da linha */
     color: #A5A3A3;
     text-align: justify;
 }
 
 .socials {
-    display: flex; /* Exibe os ícones em linha */
-    justify-content: right; /* Centraliza os ícones */
+    display: flex;
+    /* Exibe os ícones em linha */
+    justify-content: right;
+    /* Centraliza os ícones */
     padding: 0 9em 8em 0;
 }
 
 .socials a {
-    color: #ffffff; /* Cor dos ícones */
-    margin: 0 10px; /* Espaçamento entre os ícones */
-    font-size: 28px; /* Tamanho dos ícones */
-    text-decoration: none; /* Remove o sublinhado */
+    color: #ffffff;
+    /* Cor dos ícones */
+    margin: 0 10px;
+    /* Espaçamento entre os ícones */
+    font-size: 28px;
+    /* Tamanho dos ícones */
+    text-decoration: none;
+    /* Remove o sublinhado */
 }
 
 .footer-bottom {
-    margin-top: 1px; /* Espaçamento acima do copyright */
+    margin-top: 1px;
+    /* Espaçamento acima do copyright */
 }
 
 .footer-bottom p {
-    margin: 0; /* Remove margens */
-    font-size: 13px; /* Tamanho da fonte */
+    margin: 0;
+    /* Remove margens */
+    font-size: 13px;
+    /* Tamanho da fonte */
     text-align: center;
 }
 
 .footer-bottom span {
-    font-weight: lighter; /* Destaca o nome do designer */
+    font-weight: lighter;
+    /* Destaca o nome do designer */
     text-align: center;
     color: #cccccc;
 }
@@ -336,76 +378,83 @@ img.img-footer {
 /* Para telas com largura máxima de 768px */
 @media (max-width: 768px) {
     .container {
-      max-width: 100%; /* O container ocupa toda a largura da tela */
-      padding: 20px;
+        max-width: 100%;
+        /* O container ocupa toda a largura da tela */
+        padding: 20px;
     }
+
     .logo {
-      height: 50px;
-      width: 100px;
+        height: 50px;
+        width: 100px;
     }
+
     /* Outras regras específicas para telas menores */
-  }
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 300px) {
 
     .logo {
-        height: 85px; /* Altura padrão para a logo azul */
-        width: 180px; /* Largura padrão para a logo azul */
+        height: 85px;
+        /* Altura padrão para a logo azul */
+        width: 180px;
+        /* Largura padrão para a logo azul */
     }
-    
+
     /*BOTÃO MENU*/
-    
-    .inicio:hover{
-        transition: 150ms linear; 
+
+    .inicio:hover {
+        transition: 150ms linear;
         filter: brightness(130%);
         font-size: 23px;
-        
-    }  /*botao inicio */
-    
-    .resultados:hover{
-        transition: 150ms linear; 
-        filter: brightness(130%);
-        font-size: 23px;
-        
+
     }
-    
-    .olimpiadas:hover{
-        transition: 150ms linear; 
+
+    /*botao inicio */
+
+    .resultados:hover {
+        transition: 150ms linear;
         filter: brightness(130%);
         font-size: 23px;
-        
+
     }
-    
-    .contato:hover{
-        transition: 150ms linear; 
+
+    .olimpiadas:hover {
+        transition: 150ms linear;
         filter: brightness(130%);
         font-size: 23px;
-        
+
     }
-    
+
+    .contato:hover {
+        transition: 150ms linear;
+        filter: brightness(130%);
+        font-size: 23px;
+
+    }
+
     /*FINAL BOTÃO*/
-    
-    body{
+
+    body {
         font-family: "Montserrat", sans-serif;
         font-size: 17px;
     }
-    
+
     html {
         /* height: 500vh; */
         background-color: #FFFDF1;
-    } 
-    
+    }
+
     .container {
         max-width: 1280px;
         margin: auto;
     }
-    
+
     .flex {
         display: flex;
         align-items: center;
         justify-content: space-around;
     }
-    
+
     header {
         width: 100%;
         padding: 2% 4%;
@@ -416,9 +465,9 @@ img.img-footer {
         background-color: #FFFDF1;
         z-index: 10;
     }
-    
-    
-     /* header.rolagem {
+
+
+    /* header.rolagem {
         background-color: #fff;
         padding: 20px 4%;
     }
@@ -426,97 +475,117 @@ img.img-footer {
     header.rolagem a {
         color: #164059;
     }  */
-    
+
     header ul {
         list-style-type: none;
     }
-    
+
     header ul li {
         display: inline-block;
         margin: 0 40px;
     }
-    
-    header ul li a{
+
+    header ul li a {
         color: #164059;
         text-decoration: none;
     }
-    
-    .backgrond{
+
+    .backgrond {
         height: 121vh;
         width: 216vh;
         background-position: 100% 0;
         /* background-repeat: no-repeat;
         background-size: cover; */
-    
+
         /* display: flex;
         align-items: center;
         justify-content: center; */
     }
-    
-    h1.surfe-olimpiadas{
+
+    h1.surfe-olimpiadas {
         font-family: "Libre Baskerville", serif;
-        font-size: 50px;
-    }
-    
-    p{
-        text-align: justify;
-        padding: 8px 60px;
-    }
-    
-    article{
+        font-size: 30px;
+        padding: 2px 0 1px 0;
         text-align: center;
-        padding: 1em 10em 10em 10em;
     }
-    
-    
-    .p-img-inicio{
+
+    p {
+        text-align: justify;
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+
+    article {
+        text-align: justify;
+        padding: 5px 0 0 0;
+    }
+
+
+    .p-img-inicio {
         display: flex;
+        justify-content: center;
+        /* Centraliza as imagens */
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    .olimpiada{
+
+    .olimpiada {
         max-width: 100%;
-        height: 20em;
-        padding: 1em 0 0 4em;
+        height: 150px;
+        padding: 3px 0 0 3px;
     }
+
     /* ------------------------------------------------------ */
     /* OLIMPIADAS IMAGENS LINK*/
+
+/* Container principal para as imagens */
+.imagens-container {
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza os itens na direção transversal */
+    width: 100%; /* Faz o container ocupar toda a largura */
+    padding: 3px 0; /* Espaçamento interno */
+    margin: 5% 0; /* Margem superior e inferior de 5% */
+}
+
+/* Container individual para cada item de imagem */
+.imagem-item {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Centraliza os itens na direção transversal */
+    width: 100%; /* Faz o item ocupar toda a largura do container */
+    padding: 0; /* Remove o padding */
+}
+
+/* Estilo para cada imagem */
+.imagem {
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: transform 0.5s ease; /* Transição suave */
+    width: auto; /* Ajusta a largura automaticamente */
+    height: 120px; /* Define uma altura fixa para as imagens */
+    max-width: 100%; /* Limita a largura máxima a 100% do container */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para a div final */
+.final {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Centraliza os itens na direção transversal */
+    width: 100%; /* Faz o container ocupar toda a largura do parent */
+}
     
-    
-    .imagens-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 10em 10em 8em 10em;
-    }
-    
-    .final{
-        width: 40%;
-        height: 20%;
-        margin: 1em;
-        text-align: center;
-    }
-    
-    .imagem-item {
-        width: 40%;
-        margin: 1em;
-        text-align: center;
-    }
-    
-    .imagem {
-        width: 100%;
-        height: auto;
-        border-radius: 4px; /* Borda arredondada */
-        transition: transform 0.5s ease; /* Transição suave */
-    }
     
     .imagem:hover {
-        transform: scale(1.05); /* Aumenta a imagem em 10% ao passar o mouse */
+        transform: scale(1.05);
+        /* Aumenta a imagem em 10% ao passar o mouse */
         filter: brightness(70%);
     }
-    
+
     /* ------------------------------------------------------------------- */
     /* CAROUSEL RESULTADOS */
-    
+
     .carousel {
         position: relative;
         width: 55%;
@@ -528,18 +597,22 @@ img.img-footer {
         z-index: 5;
         padding: 5em 0 0 0;
     }
+
     .carousel-inner {
         display: flex;
         transition: transform 0.5s ease;
     }
+
     .carousel-item {
         min-width: 100%;
         box-sizing: border-box;
     }
+
     .carousel img {
         width: 100%;
         border-radius: 5px;
     }
+
     .carousel-controls {
         position: absolute;
         top: 50%;
@@ -548,6 +621,7 @@ img.img-footer {
         justify-content: space-between;
         transform: translateY(-50%);
     }
+
     .carousel-control {
         background-color: rgba(22, 64, 89, 0.267);
         border: none;
@@ -555,25 +629,28 @@ img.img-footer {
         cursor: pointer;
         border-radius: 50%;
     }
-    
+
     @media (max-width: 768px) {
         .carousel {
-          width: 100%;
+            width: 100%;
         }
+
         .main-container {
-          flex-direction: column-reverse; /* Inverte a ordem dos elementos em telas menores */
+            flex-direction: column-reverse;
+            /* Inverte a ordem dos elementos em telas menores */
         }
-      }
+    }
+
     /* ------------------------------------------------------------------ */
     /* RESULTADOS */
-    
+
     .h1-resultados {
         font-family: "Libre Baskerville", serif;
         font-size: 30px;
         padding: 4em 0 1em 0;
         text-align: center;
     }
-    
+
     .container-olimpiadas {
         display: flex;
         justify-content: space-between;
@@ -581,11 +658,12 @@ img.img-footer {
         flex-direction: column;
         align-items: center;
     }
-    
-    .feminino, .masculino {
+
+    .feminino,
+    .masculino {
         padding: 0 0em 0em 0em;
     }
-    
+
     .titulo-surfe-feminino {
         font-family: "Libre Baskerville", serif;
         text-align: center;
@@ -594,7 +672,7 @@ img.img-footer {
         color: #164059;
     }
 
-    .titulo-surfe-masculino{
+    .titulo-surfe-masculino {
         font-family: "Libre Baskerville", serif;
         text-align: center;
         font-size: 25px;
@@ -602,106 +680,155 @@ img.img-footer {
         color: #164059;
     }
 
-    .feminino p{
+    .feminino p {
         max-width: 100%;
     }
-    
-    .p-resultados-feminino, .p-resultados-masculino {
+
+    .p-resultados-feminino,
+    .p-resultados-masculino {
         text-align: justify;
         font-size: 12px;
     }
-    
-    .subtitulo{
+
+    .subtitulo {
         text-align: center;
         padding: 10px 0 5px 0;
         color: #164059;
         font-size: 15px;
     }
-    
+
     .container-medalhas {
         display: flex;
-        justify-content: center; /* Centraliza as imagens */
+        justify-content: center;
+        /* Centraliza as imagens */
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
     }
+
     .imagem-medalhas {
-        margin: 0 0 10px 0; /* Espaçamento entre as imagens */
+        margin: 0 0 10px 0;
+        /* Espaçamento entre as imagens */
         height: 20%;
         width: 80%;
         border-radius: 2em;
     }
-    
+
     /* ------------------------------------------------------------------ */
+    /* OLIMPIADAS */
+
+    .p-olimpiada b{
+        text-align: justify;
+        font-size: 10px;
+    }
+
+    .b {
+        text-align: center;
+        padding: 8px 0 5px 0;
+        font-size: 10px;
+        justify-content: space-between;
+
+    }
+
+
+
+
+
+
+
+
     /* FOOTER */
-    
+
     footer {
-        background-color: #164059; /* Cor de fundo do footer */
-        color: #ffffff; /* Cor do texto */
-        padding: 40px 2px; /* Espaçamento interno */
-        text-align: center; /* Centraliza o texto */
+        background-color: #164059;
+        /* Cor de fundo do footer */
+        color: #ffffff;
+        /* Cor do texto */
+        padding: 40px 2px;
+        /* Espaçamento interno */
+        text-align: center;
+        /* Centraliza o texto */
     }
-    
+
     .footer-content {
-        margin-bottom: 20px; /* Espaçamento entre o conteúdo e o copyright */
+        margin-bottom: 20px;
+        /* Espaçamento entre o conteúdo e o copyright */
     }
-    
+
     img.img-footer {
-        width: 250px; /* Largura da imagem */
-        height: auto; /* Mantém a proporção */
+        width: 250px;
+        /* Largura da imagem */
+        height: auto;
+        /* Mantém a proporção */
         display: block;
-        margin: 0 auto; /* Centraliza a imagem */
+        margin: 0 auto;
+        /* Centraliza a imagem */
     }
-    
+
     .footer-content p {
-        max-width: 600px; /* Largura máxima do parágrafo */
-        line-height: 1.6; /* Altura da linha */
+        max-width: 600px;
+        /* Largura máxima do parágrafo */
+        line-height: 1.6;
+        /* Altura da linha */
         color: #A5A3A3;
         text-align: justify;
     }
-    
+
     .socials {
-        display: flex; /* Exibe os ícones em linha */
-        justify-content: right; /* Centraliza os ícones */
+        display: flex;
+        /* Exibe os ícones em linha */
+        justify-content: right;
+        /* Centraliza os ícones */
         padding: 0 9em 8em 0;
     }
-    
+
     .socials a {
-        color: #ffffff; /* Cor dos ícones */
-        margin: 0 10px; /* Espaçamento entre os ícones */
-        font-size: 28px; /* Tamanho dos ícones */
-        text-decoration: none; /* Remove o sublinhado */
+        color: #ffffff;
+        /* Cor dos ícones */
+        margin: 0 10px;
+        /* Espaçamento entre os ícones */
+        font-size: 28px;
+        /* Tamanho dos ícones */
+        text-decoration: none;
+        /* Remove o sublinhado */
     }
-    
+
     .footer-bottom {
-        margin-top: 1px; /* Espaçamento acima do copyright */
+        margin-top: 1px;
+        /* Espaçamento acima do copyright */
     }
-    
+
     .footer-bottom p {
-        margin: 0; /* Remove margens */
-        font-size: 13px; /* Tamanho da fonte */
+        margin: 0;
+        /* Remove margens */
+        font-size: 13px;
+        /* Tamanho da fonte */
         text-align: center;
     }
-    
+
     .footer-bottom span {
-        font-weight: lighter; /* Destaca o nome do designer */
+        font-weight: lighter;
+        /* Destaca o nome do designer */
         text-align: center;
         color: #cccccc;
     }
-    
+
     /* Para telas com largura máxima de 768px */
     @media (max-width: 768px) {
         .container {
-          max-width: 100%; /* O container ocupa toda a largura da tela */
-          padding: 20px;
+            max-width: 100%;
+            /* O container ocupa toda a largura da tela */
+            padding: 20px;
         }
+
         .logo {
-          height: 50px;
-          width: 100px;
+            height: 50px;
+            width: 100px;
         }
+
         /* Outras regras específicas para telas menores */
-      }
-    
+    }
 
 
-  }
+
+}

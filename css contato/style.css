@@ -8,43 +8,47 @@
 }
 
 .logo {
-    height: 85px; /* Altura padrão para a logo azul */
-    width: 180px; /* Largura padrão para a logo azul */
+    height: 85px;
+    /* Altura padrão para a logo azul */
+    width: 180px;
+    /* Largura padrão para a logo azul */
 }
 
 /*BOTÃO MENU*/
 
-.inicio:hover{
-    transition: 150ms linear; 
+.inicio:hover {
+    transition: 150ms linear;
     filter: brightness(130%);
     font-size: 23px;
-    
-}  /*botao inicio */
 
-.resultados:hover{
-    transition: 150ms linear; 
-    filter: brightness(130%);
-    font-size: 23px;
-    
 }
 
-.olimpiadas:hover{
-    transition: 150ms linear; 
+/*botao inicio */
+
+.resultados:hover {
+    transition: 150ms linear;
     filter: brightness(130%);
     font-size: 23px;
-    
+
 }
 
-.contato:hover{
-    transition: 150ms linear; 
+.olimpiadas:hover {
+    transition: 150ms linear;
     filter: brightness(130%);
     font-size: 23px;
-    
+
+}
+
+.contato:hover {
+    transition: 150ms linear;
+    filter: brightness(130%);
+    font-size: 23px;
+
 }
 
 /*FINAL BOTÃO*/
 
-body{
+body {
     font-family: "Montserrat", sans-serif;
     font-size: 17px;
     background-color: #FFFDF1;
@@ -81,12 +85,12 @@ header ul li {
     margin: 0 40px;
 }
 
-header ul li a{
+header ul li a {
     color: #164059;
     text-decoration: none;
 }
 
-.fundo-contato{
+.fundo-contato {
     height: 90vh;
     width: 200vh;
     background-position: center;
@@ -114,37 +118,49 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 17px;
     background-color: #FFFDF1;
-    position: relative; /* Para posicionar o formulário em relação ao body */
+    position: relative;
+    /* Para posicionar o formulário em relação ao body */
 }
 
 .fundo-contato {
     height: 90vh;
-    width: 90%; /* Ajustado para 100% da largura */
-    position: absolute; /* Para que fique atrás do formulário */
+    width: 90%;
+    /* Ajustado para 100% da largura */
+    position: absolute;
+    /* Para que fique atrás do formulário */
     top: 5em;
-    left: 11em; 
-    object-fit: cover; /* Para cobrir o espaço */
+    left: 11em;
+    object-fit: cover;
+    /* Para cobrir o espaço */
 }
 
 .form-container {
-    position: fixed; /* Para posicionar em relação à imagem de fundo */
-    top: 30%; /* Distância do topo */
-    right: 15%; /* Distância da direita */
-    width: 500px; /* Largura do formulário */
-    z-index: 1; /* Para garantir que fique sobre a imagem */
+    position: fixed;
+    /* Para posicionar em relação à imagem de fundo */
+    top: 30%;
+    /* Distância do topo */
+    right: 15%;
+    /* Distância da direita */
+    width: 500px;
+    /* Largura do formulário */
+    z-index: 1;
+    /* Para garantir que fique sobre a imagem */
 }
 
 form {
-    background: rgba(22, 64, 89, 0.267); /* Fundo semi-transparente */
+    background: rgba(22, 64, 89, 0.267);
+    /* Fundo semi-transparente */
     border-radius: 35px;
-    padding: 50px; /* Padding ajustado */
+    padding: 50px;
+    /* Padding ajustado */
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
 form h1 {
     text-align: center;
     margin-bottom: 10px;
-    color: #fff; /* Cor do texto */
+    color: #fff;
+    /* Cor do texto */
     font-size: 22pt;
 }
 
@@ -152,7 +168,8 @@ form p {
     text-align: center;
     margin-bottom: 50px;
     font-size: 20px;
-    color: #fff; /* Cor do texto */
+    color: #fff;
+    /* Cor do texto */
 }
 
 form .input-single {
@@ -176,16 +193,18 @@ form .input-single .input {
     padding: 5px;
     outline: 0;
     font-size: 16px;
-    background: transparent; /* Fundo transparente */
-    color: #fff; /* Cor do texto */
+    background: transparent;
+    /* Fundo transparente */
+    color: #fff;
+    /* Cor do texto */
 }
 
 form .input-single .input:focus {
     border-bottom: 2px solid #2D5966;
 }
 
-form .input-single .input:focus ~ label,
-form .input-single .input:valid ~ label {
+form .input-single .input:focus~label,
+form .input-single .input:valid~label {
     transform: translateY(-20px);
     font-size: 12px;
     color: #2D5966;
@@ -206,3 +225,11 @@ form input[type=submit] {
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 300px) {
+    
+}
+

@@ -368,7 +368,7 @@ img.img-footer {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 300px) {
 
     /* INICIO IMAGEM MEDINA */
 
@@ -377,371 +377,441 @@ img.img-footer {
         /* notebook */
         /* height: 121vh;
         width: 216vh; */
-    
+
         /* desktop casa */
         height: 150%;
         /* width: 192vh; */
-       
+
         max-width: 250%;
-    
+
         /* background-position: 100% 0; */
     }
 
-    
-body {
-    font-family: "Montserrat", sans-serif;
-    font-size: 17px;
+
+    body {
+        font-family: "Montserrat", sans-serif;
+        font-size: 17px;
+    }
+
+    .logo {
+        height: 85px;
+        /* Altura padrão para a logo azul */
+        width: 180px;
+        /* Largura padrão para a logo azul */
+    }
+
+    .logo-branca {
+        height: 110px;
+        /* Altura específica para a logo branca */
+        width: 200px;
+        /* Largura específica para a logo branca */
+        /* Adicione outras propriedades específicas aqui, se necessário */
+    }
+
+    .container {
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .inicio:hover {
+        transition: 150ms linear;
+        filter: brightness(130%);
+        font-size: 23px;
+
+    }
+
+    /*botao inicio */
+
+    .resultados:hover {
+        transition: 150ms linear;
+        filter: brightness(130%);
+        font-size: 23px;
+
+    }
+
+    .olimpiadas:hover {
+        transition: 150ms linear;
+        filter: brightness(130%);
+        font-size: 23px;
+
+    }
+
+    .contato:hover {
+        transition: 150ms linear;
+        filter: brightness(130%);
+        font-size: 23px;
+
+    }
+
+    header {
+        width: 100%;
+        padding: 2% 4%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: .5s;
+    }
+
+
+    header.rolagem {
+        background-color: #FFFDF1;
+        padding: 20px 4%;
+    }
+
+    header.rolagem a {
+        color: #164059;
+    }
+
+    header ul {
+        list-style-type: none;
+    }
+
+    header ul li {
+        display: inline-block;
+        margin: 0 40px;
+    }
+
+    header ul li a {
+        color: #B8CAD9;
+        text-decoration: none;
+    }
+
+
+    html {
+        height: 500vh;
+        background-color: #FFFDF1;
+    }
+
+    /* ----------------------------------------------------------------- */
+
+    p {
+        text-align: justify;
+        padding: 0px;
+    }
+
+
+    article {
+        text-align: center;
+        padding: 10em 10em 2em 10em;
+    }
+
+    h1.o-surf {
+        font-family: "Libre Baskerville", serif;
+        font-size: 30px;
+    }
+
+
+
+    h1.inicio-historia {
+        font-family: "Libre Baskerville", serif;
+        font-size: 40px;
+    }
+
+    h1.historia-surfe {
+        font-family: "Libre Baskerville", serif;
+        font-size: 40px;
+    }
+
+    h1.regras {
+        font-family: "Libre Baskerville", serif;
+        font-size: 40px;
+
+    }
+
+    h1.materiais {
+        font-family: "Libre Baskerville", serif;
+        font-size: 40px;
+    }
+
+    h1.beneficios {
+        font-family: "Libre Baskerville", serif;
+        font-size: 40px;
+    }
+
+    article.curiosidades {
+        padding: 10em 20em 5em 20em;
+        text-align: justify;
+        font-size: 17px;
+    }
+
+    h1.curiosidades-do-surfe {
+        font-family: "Libre Baskerville", serif;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    h2.titulo-curiosidades {
+        text-align: justify;
+        color: #4474B5;
+    }
+
+    /* ------------------------------------------------------------------ */
+
+    .p-img-inicio {
+        display: flex;
+        width: 20%;
+
+    }
+
+    .medina-inicio {
+        display: none;
+
+    }
+
+
+    .p-img-inicio p {
+        font-size: 12px;
+        padding: 0;
+        max-width: 100%;
+        max-height: 30%;
+    }
+
+    /* ------------------------------------------------------------------ */
+
+    .p-img2-inicio {
+        display: flex;
+        justify-content: center;
+        /* Centraliza as imagens */
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .evolucao {
+        display: flex;
+        justify-content: center;
+        /* Centraliza as imagens */
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    /* ------------------------------------------------------------------ */
+
+    .p-img3-inicio {
+        display: flex;
+        justify-content: center;
+        /* Centraliza as imagens */
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .surfebrasil {
+        display: flex;
+        justify-content: center;
+        /* Centraliza as imagens */
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    /* ------------------------------------------------------------------ */
+
+    .img-dupla1 {
+        display: flex;
+    }
+
+    .img-regras {
+        width: 35em;
+        height: 21em;
+        padding: 1em 0 0 4em;
+    }
+
+    /* ------------------------------------------------------------------ */
+    .img-dupla1 {
+        display: flex;
+    }
+
+    .normas {
+        max-width: 100%;
+        height: 20em;
+        padding: 1em 5em 0 0;
+    }
+
+    /* ------------------------------------------------------------------ */
+    .img-dupla2 {
+        display: flex;
+    }
+
+    .parafina {
+        width: 30em;
+        height: 15em;
+        padding: 1em 0 0 4em;
+
+    }
+
+    /* ------------------------------------------------------------------ */
+    .img-dupla2 {
+        display: flex;
+    }
+
+    .leash {
+        width: 30em;
+        height: 17em;
+        padding: 1em 0 0 4em;
+    }
+
+    /* ------------------------------------------------------------------ */
+    .img-dupla3 {
+        display: flex;
+    }
+
+    .img-beneficios {
+        width: 30em;
+        height: 17em;
+        padding: 1em 0 0 4em;
+
+    }
+
+    /* ------------------------------------------------------------------ */
+    .img-dupla3 {
+        display: flex;
+    }
+
+    .ong {
+        width: 30em;
+        height: 17em;
+        padding: 1em 0 0 4em;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* FOOTER */
+    footer {
+        background-color: #164059;
+        /* Cor de fundo do footer */
+        color: #ffffff;
+        /* Cor do texto */
+        padding: 40px 2px;
+        /* Espaçamento interno */
+        text-align: center;
+        /* Centraliza o texto */
+    }
+
+    .footer-content {
+        margin-bottom: 20px;
+        /* Espaçamento entre o conteúdo e o copyright */
+    }
+
+    img.img-footer {
+        width: 20em;
+        /* Largura da imagem */
+        height: auto;
+        /* Mantém a proporção */
+        display: block;
+        margin: 0 auto;
+        /* Centraliza a imagem */
+    }
+
+    .footer-content p {
+        max-width: 600px;
+        /* Largura máxima do parágrafo */
+        line-height: 1.6;
+        /* Altura da linha */
+        color: #A5A3A3;
+        text-align: justify;
+    }
+
+    .socials {
+        display: flex;
+        /* Exibe os ícones em linha */
+        justify-content: right;
+        /* Centraliza os ícones */
+        padding: 0 9em 8em 0;
+    }
+
+    .socials a {
+        color: #ffffff;
+        /* Cor dos ícones */
+        margin: 0 10px;
+        /* Espaçamento entre os ícones */
+        font-size: 28px;
+        /* Tamanho dos ícones */
+        text-decoration: none;
+        /* Remove o sublinhado */
+    }
+
+    .footer-bottom {
+        margin-top: 1px;
+        /* Espaçamento acima do copyright */
+    }
+
+    .footer-bottom p {
+        margin: 0;
+        /* Remove margens */
+        font-size: 13px;
+        /* Tamanho da fonte */
+        text-align: center;
+    }
+
+    .footer-bottom span {
+        font-weight: lighter;
+        /* Destaca o nome do designer */
+        text-align: center;
+        color: #cccccc;
+    }
+
 }
 
-.logo {
-    height: 85px;
-    /* Altura padrão para a logo azul */
-    width: 180px;
-    /* Largura padrão para a logo azul */
+
+/* TESTE MENU HAMBURGUER */
+/* Estilos para o ícone do menu hambúrguer */
+.menu-hamburguer {
+    display: none; /* Oculta o ícone do menu hambúrguer por padrão */
+    font-size: 30px; /* Tamanho do ícone do hambúrguer */
+    color: white; /* Cor do ícone */
+    cursor: pointer; /* Indica que é clicável */
 }
 
-.logo-branca {
-    height: 110px;
-    /* Altura específica para a logo branca */
-    width: 200px;
-    /* Largura específica para a logo branca */
-    /* Adicione outras propriedades específicas aqui, se necessário */
+/* Media Query para telas pequenas */
+@media (max-width: 600px) {
+    .menu-hamburguer {
+        display: block; /* Exibe o ícone do menu hambúrguer em telas pequenas */
+    }
+
+    .main-nav ul {
+        display: none; /* Oculta a lista do menu em telas pequenas */
+        flex-direction: column; /* Organiza a lista em coluna */
+        position: absolute; /* Posiciona a lista em relação ao menu */
+        top: 50px; /* Distância do topo do menu */
+        right: 0; /* Alinha à direita */
+        background-color: #333; /* Cor de fundo do menu dropdown */
+        width: 100%; /* Largura total do menu */
+        padding: 0; /* Remove qualquer padding */
+        margin: 0; /* Remove qualquer margin */
+        z-index: 1000; /* Garante que o menu apareça sobre outros elementos */
+    }
+
+    .main-nav ul li {
+        width: 100%; /* Define a largura de cada item do menu como 100% */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .main-nav ul li a {
+        display: block; /* Faz com que os links ocupem toda a largura do item */
+        padding: 10px; /* Ajusta o padding para um tamanho mais compacto */
+        color: white; /* Cor do texto do link */
+        text-decoration: none; /* Remove o sublinhado */
+    }
+
+    .main-nav ul li a:hover {
+        background-color: #444; /* Muda a cor de fundo ao passar o mouse */
+    }
+
+    /* Exibe a lista do menu quando a classe 'show' é adicionada ao header */
+    #header.show .main-nav ul {
+        display: flex; /* Exibe a lista do menu como um flexbox */
+    }
 }
-
-.container {
-    max-width: 1280px;
-    margin: auto;
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-.inicio:hover {
-    transition: 150ms linear;
-    filter: brightness(130%);
-    font-size: 23px;
-
-}
-
-/*botao inicio */
-
-.resultados:hover {
-    transition: 150ms linear;
-    filter: brightness(130%);
-    font-size: 23px;
-
-}
-
-.olimpiadas:hover {
-    transition: 150ms linear;
-    filter: brightness(130%);
-    font-size: 23px;
-
-}
-
-.contato:hover {
-    transition: 150ms linear;
-    filter: brightness(130%);
-    font-size: 23px;
-
-}
-
-header {
-    width: 100%;
-    padding: 2% 4%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: .5s;
-}
-
-
-header.rolagem {
-    background-color: #FFFDF1;
-    padding: 20px 4%;
-}
-
-header.rolagem a {
-    color: #164059;
-}
-
-header ul {
-    list-style-type: none;
-}
-
-header ul li {
-    display: inline-block;
-    margin: 0 40px;
-}
-
-header ul li a {
-    color: #B8CAD9;
-    text-decoration: none;
-}
-
-
-html {
-    height: 500vh;
-    background-color: #FFFDF1;
-}
-
-/* ----------------------------------------------------------------- */
-
-p {
-    text-align: justify;
-    padding: 0px;
-}
-
-
-article {
-    text-align: center;
-    padding: 10em 10em 2em 10em;
-}
-
-h1.o-surf {
-    font-family: "Libre Baskerville", serif;
-    font-size: 30px;
-}
-
-
-
-h1.inicio-historia {
-    font-family: "Libre Baskerville", serif;
-    font-size: 40px;
-}
-
-h1.historia-surfe {
-    font-family: "Libre Baskerville", serif;
-    font-size: 40px;
-}
-
-h1.regras {
-    font-family: "Libre Baskerville", serif;
-    font-size: 40px;
-
-}
-
-h1.materiais {
-    font-family: "Libre Baskerville", serif;
-    font-size: 40px;
-}
-
-h1.beneficios {
-    font-family: "Libre Baskerville", serif;
-    font-size: 40px;
-}
-
-article.curiosidades {
-    padding: 10em 20em 5em 20em;
-    text-align: justify;
-    font-size: 17px;
-}
-
-h1.curiosidades-do-surfe {
-    font-family: "Libre Baskerville", serif;
-    text-align: center;
-    font-size: 40px;
-}
-
-h2.titulo-curiosidades {
-    text-align: justify;
-    color: #4474B5;
-}
-
-/* ------------------------------------------------------------------ */
-
-.p-img-inicio {
-    display: flex;
-    width: 20%;
-    
-}
-
-.medina-inicio {
-   display: none;
-    
-}
-
-
-.p-img-inicio p {
-    font-size: 12px;
-    padding: 0;
-    max-width: 100%;
-    max-height: 30%;
-}
-
-/* ------------------------------------------------------------------ */
-
-.p-img2-inicio {
-    display: flex;
-}
-
-.evolucao {
-    max-width: 100%;
-    height: 23em;
-    padding: 1em 0 0 4em;
-}
-
-/* ------------------------------------------------------------------ */
-
-.p-img3-inicio {
-    display: flex;
-}
-
-.surfebrasil {
-    max-width: 100%;
-    height: 23em;
-    padding: 1em 0 0 4em;
-}
-
-/* ------------------------------------------------------------------ */
-
-.img-dupla1 {
-    display: flex;
-}
-
-.img-regras {
-    width: 35em;
-    height: 21em;
-    padding: 1em 0 0 4em;
-}
-
-/* ------------------------------------------------------------------ */
-.img-dupla1 {
-    display: flex;
-}
-
-.normas {
-    max-width: 100%;
-    height: 20em;
-    padding: 1em 5em 0 0;
-}
-
-/* ------------------------------------------------------------------ */
-.img-dupla2 {
-    display: flex;
-}
-
-.parafina {
-    width: 30em;
-    height: 15em;
-    padding: 1em 0 0 4em;
-
-}
-
-/* ------------------------------------------------------------------ */
-.img-dupla2 {
-    display: flex;
-}
-
-.leash {
-    width: 30em;
-    height: 17em;
-    padding: 1em 0 0 4em;
-}
-
-/* ------------------------------------------------------------------ */
-.img-dupla3 {
-    display: flex;
-}
-
-.img-beneficios {
-    width: 30em;
-    height: 17em;
-    padding: 1em 0 0 4em;
-
-}
-
-/* ------------------------------------------------------------------ */
-.img-dupla3 {
-    display: flex;
-}
-
-.ong {
-    width: 30em;
-    height: 17em;
-    padding: 1em 0 0 4em;
-}
-
-/* ------------------------------------------------------------------ */
-/* FOOTER */
-footer {
-    background-color: #164059;
-    /* Cor de fundo do footer */
-    color: #ffffff;
-    /* Cor do texto */
-    padding: 40px 2px;
-    /* Espaçamento interno */
-    text-align: center;
-    /* Centraliza o texto */
-}
-
-.footer-content {
-    margin-bottom: 20px;
-    /* Espaçamento entre o conteúdo e o copyright */
-}
-
-img.img-footer {
-    width: 20em;
-    /* Largura da imagem */
-    height: auto;
-    /* Mantém a proporção */
-    display: block;
-    margin: 0 auto;
-    /* Centraliza a imagem */
-}
-
-.footer-content p {
-    max-width: 600px;
-    /* Largura máxima do parágrafo */
-    line-height: 1.6;
-    /* Altura da linha */
-    color: #A5A3A3;
-    text-align: justify;
-}
-
-.socials {
-    display: flex;
-    /* Exibe os ícones em linha */
-    justify-content: right;
-    /* Centraliza os ícones */
-    padding: 0 9em 8em 0;
-}
-
-.socials a {
-    color: #ffffff;
-    /* Cor dos ícones */
-    margin: 0 10px;
-    /* Espaçamento entre os ícones */
-    font-size: 28px;
-    /* Tamanho dos ícones */
-    text-decoration: none;
-    /* Remove o sublinhado */
-}
-
-.footer-bottom {
-    margin-top: 1px;
-    /* Espaçamento acima do copyright */
-}
-
-.footer-bottom p {
-    margin: 0;
-    /* Remove margens */
-    font-size: 13px;
-    /* Tamanho da fonte */
-    text-align: center;
-}
-
-.footer-bottom span {
-    font-weight: lighter;
-    /* Destaca o nome do designer */
-    text-align: center;
-    color: #cccccc;
-}   
-
-}
-
 
