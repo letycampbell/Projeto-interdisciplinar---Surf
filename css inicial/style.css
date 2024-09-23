@@ -374,19 +374,17 @@ img.img-footer {
 
     .backgrond {
 
-        /* notebook */
-        /* height: 121vh;
-        width: 216vh; */
-
-        /* desktop casa */
-        height: 150%;
-        /* width: 192vh; */
-
-        max-width: 250%;
-
-        /* background-position: 100% 0; */
+        width: 100%;
+        /* Garante que a imagem ocupe 100% da largura */
+        height: 40vh;
+        /* Altura reduzida para 40% da altura da janela */
+        object-fit: cover;
+        /* Ajusta a imagem para cobrir a área disponível */
+        background-position: left;
+        /* Foca na parte esquerda da imagem */
     }
 
+    /* PARTE INICIAL HOME */
 
     body {
         font-family: "Montserrat", sans-serif;
@@ -420,14 +418,15 @@ img.img-footer {
 
     }
 
+
+    /* BOTÃO MENU */
+
     .inicio:hover {
         transition: 150ms linear;
         filter: brightness(130%);
         font-size: 23px;
 
     }
-
-    /*botao inicio */
 
     .resultados:hover {
         transition: 150ms linear;
@@ -440,8 +439,9 @@ img.img-footer {
         transition: 150ms linear;
         filter: brightness(130%);
         font-size: 23px;
-
     }
+
+
 
     .contato:hover {
         transition: 150ms linear;
@@ -449,6 +449,10 @@ img.img-footer {
         font-size: 23px;
 
     }
+
+    /*  FINAL BOTÃO MENU */
+
+
 
     header {
         width: 100%;
@@ -459,6 +463,7 @@ img.img-footer {
         transition: .5s;
     }
 
+    /* ROLAGEM PAGINA HOME */
 
     header.rolagem {
         background-color: #FFFDF1;
@@ -484,30 +489,22 @@ img.img-footer {
     }
 
 
+
     html {
         height: 500vh;
         background-color: #FFFDF1;
     }
 
-    /* ----------------------------------------------------------------- */
+    /* FINAL */
 
-    p {
-        text-align: justify;
-        padding: 0px;
-    }
+    /* RESPONSIVIDADE TEXTOS/CONTEUDO GERAL */
 
-
-    article {
-        text-align: center;
-        padding: 10em 10em 2em 10em;
-    }
+    /* TITULOS H1 */
 
     h1.o-surf {
         font-family: "Libre Baskerville", serif;
         font-size: 30px;
     }
-
-
 
     h1.inicio-historia {
         font-family: "Libre Baskerville", serif;
@@ -535,47 +532,51 @@ img.img-footer {
         font-size: 40px;
     }
 
-    article.curiosidades {
-        padding: 10em 20em 5em 20em;
-        text-align: justify;
-        font-size: 17px;
-    }
-
     h1.curiosidades-do-surfe {
         font-family: "Libre Baskerville", serif;
         text-align: center;
         font-size: 40px;
     }
 
+    /* FINAL DOS TITULOS */
+
     h2.titulo-curiosidades {
         text-align: justify;
         color: #4474B5;
+
     }
 
-    /* ------------------------------------------------------------------ */
+    article.curiosidades {
+        padding: 10em 20em 5em 20em;
+        text-align: justify;
+        font-size: 17px;
+    }
+
+
+    /* ORGANIZAÇÃO DAS IMAGENS HOME */
+
+    article {
+        padding: 10px; /* Adiciona espaçamento interno ao redor do conteúdo do artigo */
+        margin: 2px;
+    }
+
+    /* Estilo da imagem */
 
     .p-img-inicio {
-        display: flex;
-        width: 20%;
-
+        text-align: center;  /* Centraliza a imagem dentro do contêiner */
+        flex-direction: column;
     }
 
-    .medina-inicio {
-        display: none;
+    .p-img-inicio img {
+        width: 100%; /* A imagem ocupa 100% da largura do contêiner pai */
+        height: auto; /* Mantém a proporção da imagem ao redimensionar */
+        max-width: 400px; /* Define uma largura máxima para a imagem para evitar que fique muito grande */
 
     }
-
-
-    .p-img-inicio p {
-        font-size: 12px;
-        padding: 0;
-        max-width: 100%;
-        max-height: 30%;
-    }
-
-    /* ------------------------------------------------------------------ */
 
     .p-img2-inicio {
+        text-align: left;
+        /* Centraliza a imagem */
         display: flex;
         justify-content: center;
         /* Centraliza as imagens */
@@ -584,18 +585,6 @@ img.img-footer {
         align-items: center;
         padding: 0;
     }
-
-    .evolucao {
-        display: flex;
-        justify-content: center;
-        /* Centraliza as imagens */
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    /* ------------------------------------------------------------------ */
 
     .p-img3-inicio {
         display: flex;
@@ -605,6 +594,65 @@ img.img-footer {
         flex-direction: column;
         align-items: center;
         padding: 0;
+    }
+
+    .img-dupla1 {
+        display: flex;
+    }
+
+    .img-regras {
+        width: 35em;
+        height: 21em;
+        padding: 1em 0 0 4em;
+    }
+
+    .img-dupla1 {
+        display: flex;
+    }
+
+    .img-dupla2 {
+        display: flex;
+    }
+
+    .img-dupla2 {
+        display: flex;
+    }
+
+    .img-dupla3 {
+        display: flex;
+    }
+
+    .img-beneficios {
+        width: 30em;
+        height: 17em;
+        padding: 1em 0 0 4em;
+
+    }
+
+
+
+    /* Estilo para os parágrafos */
+    p {  font-size: 13px; /* Define o tamanho da fonte para os parágrafos */
+         line-height: 1.2; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
+    }
+
+    .evolucao {
+        width: 100%;
+        /* A imagem ocupa 100% da largura do contêiner */
+        height: auto;
+        /* Mantém a proporção da imagem */
+        max-width: 300px;
+        /* Define uma largura máxima para a imagem */
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .medina-inicio {
+        display: none;
+
     }
 
     .surfebrasil {
@@ -617,32 +665,10 @@ img.img-footer {
         padding: 0;
     }
 
-    /* ------------------------------------------------------------------ */
-
-    .img-dupla1 {
-        display: flex;
-    }
-
-    .img-regras {
-        width: 35em;
-        height: 21em;
-        padding: 1em 0 0 4em;
-    }
-
-    /* ------------------------------------------------------------------ */
-    .img-dupla1 {
-        display: flex;
-    }
-
     .normas {
         max-width: 100%;
         height: 20em;
         padding: 1em 5em 0 0;
-    }
-
-    /* ------------------------------------------------------------------ */
-    .img-dupla2 {
-        display: flex;
     }
 
     .parafina {
@@ -652,32 +678,10 @@ img.img-footer {
 
     }
 
-    /* ------------------------------------------------------------------ */
-    .img-dupla2 {
-        display: flex;
-    }
-
     .leash {
         width: 30em;
         height: 17em;
         padding: 1em 0 0 4em;
-    }
-
-    /* ------------------------------------------------------------------ */
-    .img-dupla3 {
-        display: flex;
-    }
-
-    .img-beneficios {
-        width: 30em;
-        height: 17em;
-        padding: 1em 0 0 4em;
-
-    }
-
-    /* ------------------------------------------------------------------ */
-    .img-dupla3 {
-        display: flex;
     }
 
     .ong {
@@ -686,7 +690,6 @@ img.img-footer {
         padding: 1em 0 0 4em;
     }
 
-    /* ------------------------------------------------------------------ */
     /* FOOTER */
     footer {
         background-color: #164059;
@@ -766,52 +769,74 @@ img.img-footer {
 
 
 /* TESTE MENU HAMBURGUER */
-/* Estilos para o ícone do menu hambúrguer */
+
 .menu-hamburguer {
-    display: none; /* Oculta o ícone do menu hambúrguer por padrão */
-    font-size: 30px; /* Tamanho do ícone do hambúrguer */
-    color: white; /* Cor do ícone */
-    cursor: pointer; /* Indica que é clicável */
+    display: none;
+    /* Oculta o ícone do menu hambúrguer por padrão */
+    font-size: 30px;
+    /* Tamanho do ícone do hambúrguer */
+    color: white;
+    /* Cor do ícone */
+    cursor: pointer;
+    /* Indica que é clicável */
 }
 
 /* Media Query para telas pequenas */
 @media (max-width: 600px) {
     .menu-hamburguer {
-        display: block; /* Exibe o ícone do menu hambúrguer em telas pequenas */
+        display: block;
+        /* Exibe o ícone do menu hambúrguer em telas pequenas */
     }
 
     .main-nav ul {
-        display: none; /* Oculta a lista do menu em telas pequenas */
-        flex-direction: column; /* Organiza a lista em coluna */
-        position: absolute; /* Posiciona a lista em relação ao menu */
-        top: 50px; /* Distância do topo do menu */
-        right: 0; /* Alinha à direita */
-        background-color: #333; /* Cor de fundo do menu dropdown */
-        width: 100%; /* Largura total do menu */
-        padding: 0; /* Remove qualquer padding */
-        margin: 0; /* Remove qualquer margin */
-        z-index: 1000; /* Garante que o menu apareça sobre outros elementos */
+        display: none;
+        /* Oculta a lista do menu em telas pequenas */
+        flex-direction: column;
+        /* Organiza a lista em coluna */
+        position: absolute;
+        /* Posiciona a lista em relação ao menu */
+        top: 50px;
+        /* Distância do topo do menu */
+        right: 0;
+        /* Alinha à direita */
+        background-color: #333;
+        /* Cor de fundo do menu dropdown */
+        width: 100%;
+        /* Largura total do menu */
+        padding: 0;
+        /* Remove qualquer padding */
+        margin: 0;
+        /* Remove qualquer margin */
+        z-index: 1000;
+        /* Garante que o menu apareça sobre outros elementos */
     }
 
     .main-nav ul li {
-        width: 100%; /* Define a largura de cada item do menu como 100% */
-        text-align: center; /* Centraliza o texto */
+        width: 100%;
+        /* Define a largura de cada item do menu como 100% */
+        text-align: center;
+        /* Centraliza o texto */
     }
 
     .main-nav ul li a {
-        display: block; /* Faz com que os links ocupem toda a largura do item */
-        padding: 10px; /* Ajusta o padding para um tamanho mais compacto */
-        color: white; /* Cor do texto do link */
-        text-decoration: none; /* Remove o sublinhado */
+        display: block;
+        /* Faz com que os links ocupem toda a largura do item */
+        padding: 10px;
+        /* Ajusta o padding para um tamanho mais compacto */
+        color: white;
+        /* Cor do texto do link */
+        text-decoration: none;
+        /* Remove o sublinhado */
     }
 
     .main-nav ul li a:hover {
-        background-color: #444; /* Muda a cor de fundo ao passar o mouse */
+        background-color: #444;
+        /* Muda a cor de fundo ao passar o mouse */
     }
 
     /* Exibe a lista do menu quando a classe 'show' é adicionada ao header */
     #header.show .main-nav ul {
-        display: flex; /* Exibe a lista do menu como um flexbox */
+        display: flex;
+        /* Exibe a lista do menu como um flexbox */
     }
 }
-
